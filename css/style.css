@@ -1,0 +1,25 @@
+.navbar { 
+    background-color: rgb(31, 31, 31);
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 50px;
+}
+
+.nav-link { 
+    color: #fff;
+    font-size: 20px;
+}
+
+.content { 
+    text-align: justify;
+}
+
+.margin { 
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+.bg-footer { 
+    background-color: black;
+    color: white;
+}
