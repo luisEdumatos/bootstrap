@@ -1,90 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <title>RPInformatica</title>
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.jpg" alt="Logo RPInformatica" width="100" height="100">
-            </a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#quem-somos">Quem somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" class="nav-link" href="#servicos">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#faleconosco">Fale Conosco</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>    
 
-        <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-              <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-            </div>
-            <div class="col-md-5">
-              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-      
-            </div>
-          </div>
-    
-        <section id="quem-somos">
-            <div class="container-fluid quem-somos text-center margin">
-                <h3>QUEM SOMOS</h3>
-                <p class="content">A RPInformatica é uma empresa focada em solucionar o seu problema. É isso! Por que se preocupar? Entre em contato conosco para entendermos suas necessidades e atuarmos na solução com o profissionalismo de sempre. Conte conosco!</p>
-            </div>
-        </section>
+<head>
+    <meta charset="utf-8">
+    <title>RPInformatica</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="carousel.css">
+</head>
 
-        <hr class="featurette-divider">
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.jpg" alt="Logo RPInformatica" width="100" height="100">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#quem-somos">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" class="nav-link" href="#servicos">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faleconosco">Fale Conosco</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-        <section id="servicos">
-            <div class="container-fluid text-center margin servicos">
-                <h3>SERVIÇOS</h3>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <img src="img/logo2.jpg" alt="Serviços">
-                            <p>Formatação de desktops e notebooks. Instalação completa de um novo sistema operacional compativel com as especificações de hardware do dispositivo. Instalação dos principais programas e componentes utilizados no dia a dia, como navegadores, pacote office e antivirus.</p>
+    <section id="carrosel">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+               
+                    <img src="img/banner.jpg" alt="Banner1" width="100%" height="500">
+
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Example headline.</h1>
+                            <p>Some representative placeholder content for the first slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
                         </div>
-                        <div class="col-lg-4">
-                            <img src="img/logo2.jpg" alt="Serviços">
-                            <p>Venda de desktops e notebooks. Dispositivos montados para atender a sua necessidade. Trabalhe em HomeOffice com uma boa máquina e evite os constantes travamentos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                    </svg>
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Some representative placeholder content for the second slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
                         </div>
-                        <div class="col-lg-4">
-                            <img src="img/logo2.jpg" alt="Serviços">
-                            <p>Atendimento empresarial. Sua empresa necessita de suporte em TI? Nós podemos te atender! Atendimentos como formatação, instalação de novos componentes de Hardware, reparo em redes e servidores. Conte conosco!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                    </svg>
+
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>One more for good measure.</h1>
+                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
 
-        <section id="faleconosco"> 
-            <div class="conteiner fluid text-center margin faleconocos">
-                <h3>FALE CONOSCO</h3>
-                <div class="conteiner">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <img src="img/banner.jpg" alt="Banner1" width="100%">
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="img/banner2.jpg" alt="Banner2" width="100%">
-                        </div>
+    <section id="quem-somos">
+        <div class="container-fluid quem-somos text-center margin">
+            <h3>QUEM SOMOS</h3>
+            <p class="content">A RPInformatica é uma empresa focada em solucionar o seu problema. É isso! Por que se
+                preocupar? Entre em contato conosco para entendermos suas necessidades e atuarmos na solução com o
+                profissionalismo de sempre. Conte conosco!</p>
+        </div>
+    </section>
+
+    <hr class="featurette-divider">
+
+    <section id="servicos">
+        <div class="container-fluid text-center margin servicos">
+            <h3>SERVIÇOS</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="img/logo2.jpg" alt="Serviços">
+                        <p>Formatação de desktops e notebooks. Instalação completa de um novo sistema operacional
+                            compativel com as especificações de hardware do dispositivo. Instalação dos principais
+                            programas e componentes utilizados no dia a dia, como navegadores, pacote office e
+                            antivirus.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="img/logo2.jpg" alt="Serviços">
+                        <p>Venda de desktops e notebooks. Dispositivos montados para atender a sua necessidade. Trabalhe
+                            em HomeOffice com uma boa máquina e evite os constantes travamentos.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="img/logo2.jpg" alt="Serviços">
+                        <p>Atendimento empresarial. Sua empresa necessita de suporte em TI? Nós podemos te atender!
+                            Atendimentos como formatação, instalação de novos componentes de Hardware, reparo em redes e
+                            servidores. Conte conosco!</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </body>
-    <footer class="container-fluid text-center bg-footer margin">
-        <p>Desenvolvido por Luis Eduardo de Matos</p>
-    </footer>
+        </div>
+    </section>
+
+    <section id="faleconosco">
+        <div class="conteiner fluid text-center margin faleconocos">
+            <h3>FALE CONOSCO</h3>
+            <div class="conteiner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="img/banner.jpg" alt="Banner1" width="100%">
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/banner2.jpg" alt="Banner2" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+<footer class="container-fluid text-center bg-footer margin">
+    <p>Desenvolvido por Luis Eduardo de Matos</p>
+</footer>
+
 </html>
